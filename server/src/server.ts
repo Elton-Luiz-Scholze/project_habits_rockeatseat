@@ -12,13 +12,15 @@ app.register(cors);
  */
 
 app.get("/", async () => {
-    const habits = await prisma.habit.findMany();
+  const habits = await prisma.habit.findMany();
 
-    return habits;
+  return habits;
 });
 
-app.listen({
-    port: 3000
-}).then(() => {
-    console.log("HTTP Server running!")
-})
+app
+  .listen({
+    port: 3000,
+  })
+  .then(() => {
+    console.log("HTTP Server running!");
+  });
