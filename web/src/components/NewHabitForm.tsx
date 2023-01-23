@@ -62,7 +62,7 @@ export function NewHabitForm() {
         Qual a recorrência?
       </label>
 
-      <div className="mt-3 flex flex-col gap-2">
+      <div className="mt-3 flex flex-col gap-2 transition-colors">
         {avaiableWeekDays.map((weekDay, index) => (
           <Checkbox.Root
             key={weekDay}
@@ -89,7 +89,7 @@ export function NewHabitForm() {
 
       <button
         type="submit"
-        className="mt-6 rounded-lg p-4 gap-3 flex items-center justify-center font-semibold bg-green-600 hover:bg-green-500"
+        className="mt-6 rounded-lg p-4 gap-3 flex items-center justify-center font-semibold bg-green-600 hover:bg-green-500 transition-colors"
       >
         <Check size={20} weight="bold" />
         Confirmar
